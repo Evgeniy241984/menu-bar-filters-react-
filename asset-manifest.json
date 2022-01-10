@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.03600532.css",
-    "main.js": "/static/js/main.79a76159.js",
-    "index.html": "/index.html",
-    "main.03600532.css.map": "/static/css/main.03600532.css.map",
-    "main.79a76159.js.map": "/static/js/main.79a76159.js.map"
+    "main.css": "/menu-bar-filters-react-/static/css/main.03600532.css",
+    "main.js": "/menu-bar-filters-react-/static/js/main.79a76159.js",
+    "index.html": "/menu-bar-filters-react-/index.html",
+    "main.03600532.css.map": "/menu-bar-filters-react-/static/css/main.03600532.css.map",
+    "main.79a76159.js.map": "/menu-bar-filters-react-/static/js/main.79a76159.js.map"
   },
   "entrypoints": [
     "static/css/main.03600532.css",
