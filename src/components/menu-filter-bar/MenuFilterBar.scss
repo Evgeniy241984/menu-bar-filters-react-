@@ -1,18 +1,18 @@
-.menu-bar {
+.filter-menu{
+    margin-left: 25px;
 
+    &__list {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    &__item {
+        margin-right: 20px;
+        list-style: none;
+    }
 }
 
-.filter-menu-list {
-    display: flex;
-    flex-direction: row;
-}
-
-.filter-menu__item {
-    margin-left: 20px;
-    list-style: none;
-}
-
-.filter-menu__item.open > button {
+.open {
     border: 2px solid #f44336;
-    border-radius: 3px;
 }

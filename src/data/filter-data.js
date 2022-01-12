@@ -1,4 +1,4 @@
-const filterData = {
+export const filtersData = {
       size: [
           {
               id: "2x3",
@@ -262,4 +262,3 @@ const filterData = {
           }
       ],
     };
-export default filterData;

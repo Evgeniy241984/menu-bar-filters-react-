@@ -1,0 +1,49 @@
+.applied {
+    margin-top: 200px;
+
+    &-wrapper {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        margin-left: 50px;
+        
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-left: 10px;
+
+    }
+
+    &__item {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 10px;
+        padding: 3px;
+        border: black solid 1px;
+        border-radius: 3px;
+    }
+
+    &__controls {
+        margin-left: 10px;
+
+    }
+
+    &__close {
+      
+        font-size: 1.3em;
+        text-align: center;
+        font-weight: bolder;
+        margin: 3px;
+        cursor: pointer;
+    }
+
+    &__close-all {
+        padding: 5px;
+    }
+
+    
+}

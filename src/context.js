@@ -1,4 +1,7 @@
 import { createContext, useContext } from "react";
 
-export const FilterContext = createContext({});
-export const useFilterContext = () => useContext(FilterContext);
+export const MenuBarFilterContext = createContext({});
+export const useMenuBarFilterContext = () => useContext(MenuBarFilterContext);
+
+export const AppliedFiltersContext = createContext({});
+export const useAppliedFiltersContext = () => useContext(AppliedFiltersContext);

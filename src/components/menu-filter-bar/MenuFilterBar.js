@@ -1,12 +1,12 @@
 import React, { useEffect, useRef } from 'react';
 import {useState} from 'react';
-import { useFilterContext } from '../../context';
-import DropdownOptionsList from '../dropdown-options-list';
+import { useMenuBarFilterContext } from '../../context';
+import FilterItemDropdown from '../filter-item-dropdown';
 import onClickOutside from "react-onclickoutside";
 import './MenuFilterBar.scss';
 
 const MenuFilterBar = () => {    
-    const {currentFilters} = useFilterContext();
+    const {filters} = useMenuBarFilterContext();
     const [openDropDown, setOpenDropDown] = useState(null);
     
 
@@ -15,32 +15,35 @@ const MenuFilterBar = () => {
         setOpenDropDown(label);
     };
     
-    const keys = Object.keys(currentFilters);
-    const elements = keys.map((filterName) => {
+    const keys = Object.keys(filters);
+    const filtersList = keys.map((filterName) => {
+
         const isOpen = openDropDown === filterName;
 
-        let itemLiClassName = "filter-menu__item";
+        let filterButtonClassName = 'filter-menu__button';
         
-        if( isOpen) {
-            itemLiClassName += ' open';
+        if(isOpen) {
+            filterButtonClassName += ' open';
         }
         
 
         return (
-            <li key={ filterName } className={itemLiClassName}>
-                <button type="button"
-                    onClick={() => openDropDownHandler(filterName)}>
+            <li key={ filterName } className='filter-menu__item'>
+                <button className = { filterButtonClassName }
+                    type="button"
+                    onClick={() => openDropDownHandler(filterName)}
+                    onKeyPress={() => openDropDownHandler(filterName)}>
                         {filterName}
                 </button>
-                {isOpen && <DropdownOptionsList filterName = {filterName} />} 
+                {isOpen && <FilterItemDropdown filterName = {filterName} />} 
             </li>
         );            
     });  
  
     return (
-        <div className="menu-bar">
-            <ul className="filter-menu-list">
-                {elements}
+        <div className="filter-menu">
+            <ul className="filter-menu__list">
+                {filtersList}
             </ul>       
         </div>
     );
