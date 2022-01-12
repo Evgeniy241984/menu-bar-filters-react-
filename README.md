@@ -1,6 +1,6 @@
-## menu-bar-filters (with react)
+## Menu-bar-filters (react)
 
-[gh-pages](https://evgeniy241984.github.io/menu-bar-filters-react-/) 
+To see it on GhPages click here: [gh-pages](https://evgeniy241984.github.io/menu-bar-filters-react-/) 
 
 ### Basic functionality without nice looking (will do nice styles)  
 
