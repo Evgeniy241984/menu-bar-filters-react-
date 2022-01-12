@@ -20,8 +20,11 @@ const FilterItemDropdown = ({filterName}) => {
         } 
     }; 
 
+    let controlCancelClassNames = 'control__cancel'
+
     const isOptionSelected  = (option) => {
         if (selectedOptions.find(current => current.id === option.id)) {
+            controlCancelClassNames += ' visible'
             return true;
         } else return false;
     };
@@ -29,6 +32,7 @@ const FilterItemDropdown = ({filterName}) => {
     const onCancelSelection = () => {
         let newEmptySelect = [];
         setSelectedOptions([...newEmptySelect])
+        controlCancelClassNames = 'control__cancel';
     }
     
     const onApplySelected = ( selectedOptionsList ) => {
@@ -65,11 +69,11 @@ const FilterItemDropdown = ({filterName}) => {
             <div className="dropdown__control">
                 <button
                     type="button" 
-                    className="control__cancel"
+                    className={ controlCancelClassNames }
                     onClick={ () => onCancelSelection() }
                     onKeyPress={ () => onCancelSelection() }>
                     Cancel
-                </button> 
+                </button>
                 <button
                     type="button" 
                     className="control__apply"
