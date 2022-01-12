@@ -1,3 +1,27 @@
+## menu-bar-filters (with react)
+
+[gh-pages](https://evgeniy241984.github.io/menu-bar-filters-react-/) 
+
+### Basic functionality without nice looking (will do nice styles)  
+
+### The State is implemented using React Context
+
+### TODO: 
+ 1. Develop a Compoment -  CountSelectedOptions
+ 2. Add nice CSS styles 
+
+### Project Structure 
+
+/ src 
+/ -  components
+/ - / - app                       - Basic component placed here, Provided All Contexts
+/ - / - applied-filters-bar       - Applied filters managed here
+/ - / - filter-item-dropdown      - DropDown section with FilterItems managed here
+/ - / - menu-filter-bar           - Menu bar with List Of Filters
+/ -  data
+/ -/ - filterData               - Array of filters
+
+
 
 ## Available Scripts
 
