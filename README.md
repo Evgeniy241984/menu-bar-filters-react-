@@ -12,14 +12,14 @@
 
 ### Project Structure 
 
-/ src 
-/ -  components
-/ - / - app                       - Basic component placed here, Provided All Contexts
-/ - / - applied-filters-bar       - Applied filters managed here
-/ - / - filter-item-dropdown      - DropDown section with FilterItems managed here
-/ - / - menu-filter-bar           - Menu bar with List Of Filters
-/ -  data
-/ -/ - filterData               - Array of filters
+/ src   
+/ -  components  
+/ - / - app                       - Basic component placed here, Provided All Contexts  
+/ - / - applied-filters-bar       - Applied filters managed here  
+/ - / - filter-item-dropdown      - DropDown section with FilterItems managed here  
+/ - / - menu-filter-bar           - Menu bar with List Of Filters  
+/ -  data  
+/ -/ - filterData               - Array of filters  
 
 
 
